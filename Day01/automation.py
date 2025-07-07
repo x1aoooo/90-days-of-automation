@@ -10,10 +10,10 @@ EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 
 # Create email
 msg = EmailMessage()
-msg['Subject'] = "Daily Automation Test"
+msg['Subject'] = "DAY 1 OF AI AUTOMATION"
 msg['From'] = EMAIL_ADDRESS
 msg['To'] = EMAIL_ADDRESS
-msg.set_content("This is your Day 01 automation email!")
+msg.set_content("This is my first day of AI automation.")
 
 # Send
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
